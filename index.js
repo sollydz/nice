@@ -23,17 +23,18 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('1116621382466412614')
+    .setApplicationId('1198857147350515803')
     .setType('STREAMING')
-    .setURL('https://twitch.tv/developer') //Must be a youtube video link 
+    .setURL('https://www.youtube.com/watch?v=ZAPi_WGreGM') //Must be a youtube video link 
     .setState('我讨厌数学')
-    .setName('soly')
-    .setDetails(`━╬٨ـﮩﮩ❤٨ـﮩﮩـ╬━`)
+    .setName('Solly')
+    .setDetails(`Sollyy`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://media.discordapp.net/attachments/1116694463658598412/1198894308275781742/9cKIHbWbbX3e4qM4itasnocarteanime.gif?') //You can put links in tenor or discord and etc.
-.setAssetsSmallImage('small_img')
+ .setAssetsLargeImage('https://media.discordapp.net/attachments/1116694463658598412/1198930245814865950/18e57ab735273e4235374e6e42fe6c4e.gif?') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('几何导致缓慢而痛苦的死亡') //Text when you hover the Large image
-    .addButton('⛓', 'https://discord.com/invite/UsYZRFFfrK/')
+    .setAssetsSmallImage('https://media.discordapp.net/attachments/1116694463658598412/1198930586174230609/7449.png?') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('?') //Text when you hover the Small image
+    .addButton('⚠', 'https://discord.com/invite/UsYZRFFfrK');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
@@ -42,7 +43,7 @@ client.on('ready', async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `━╬٨ـﮩﮩ❤٨ـﮩﮩـ╬━`;
+      const newDetails = `▃▅▆█ 웃 █▆▅▃`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
