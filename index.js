@@ -37,7 +37,7 @@ client.on('ready', async () => {
     .addButton('⚠', 'https://discord.com/invite/UsYZRFFfrK');
 
   client.user.setActivity(r);
-  client.user.setPresence({ status: "online" }); //dnd, online, idle, offline
+  client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
 
   let prevTime = null;
   setInterval(() => {
